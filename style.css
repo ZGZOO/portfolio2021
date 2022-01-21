@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: "Lato", sans-serif;
+	box-sizing: border-box;
+}
+
+/* navbar styling */
+.navbar {
+	font-weight: 400;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: rgb(255, 255, 255);
+}
+
+.navbar_container {
+	/* border: 1px solid red; */
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 0.5em;
+	display: flex;
+}
+
+.navbar_container a {
+	text-decoration: none;
+	color: #5c625b;
+	/* border: 1px solid blue; */
+	border-radius: 0.3em;
+	padding: 0.5em;
+	margin: 0 0.2em;
+	flex: 1;
+	text-align: center;
+}
+/* navbar styling */
+/* --- */
+
+/* header styling */
+header {
+	max-width: 600px;
+	margin: 0 auto;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.8em;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 30px;
+	color: #5c625b;
+	margin-bottom: 30px;
+}
+/* header styling */
+/* --- */
+
+/* social media icons */
+header .social_media {
+	text-decoration: none;
+	width: 80vw;
+	max-width: 340px;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+}
+
+header .social_media a {
+	text-decoration: none;
+	color: #348754;
+}
+
+header .social_media a span {
+	/* border: 1px solid blue; */
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+header .social_media a img {
+	/* border: 1px solid purple; */
+	vertical-align: middle;
+}
+/* social media icons */
+/* --- */
+
+.profile_divider {
+	width: 80vw;
+	max-width: 500px;
+	margin: 0 auto;
+	border: 0.5px solid #eaefec;
+}
+
+/* about content styling */
+.about_content {
+	width: 80vw;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.about_content h3 {
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.about_content .sub_content {
+	margin-top: 20px;
+	font-size: 16px;
+	line-height: 28px;
+	list-style-position: inside;
+}
+/* about content styling */
+/* --- */
+
+.section_divider {
+	width: 80vw;
+	max-width: 206px;
+	margin: 0 auto;
+	border: 0.5px solid #eaefec;
+}
+
+.section_title {
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.projects_content {
+	margin: 0 auto;
+}
+
+/* each project block general styling */
+.project {
+	/* offset-x | offset-y | blur-radius | color */
+	/* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05); */
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.13);
+	border-radius: 4px;
+}
+
+/* project item styling */
+.project_item {
+	position: relative;
+	margin: 0 auto;
+	/* border: 1px solid blue; */
+}
+/* project item styling */
+/* --- */
+
+.project_item img {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	width: 100%;
+}
+
+/* project - two buttons styling */
+.project_buttons {
+	/* border: 1px solid red; */
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.project_buttons a {
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.project_buttons .see-site {
+	font-size: 14px;
+	text-align: left;
+	padding: 12px;
+	padding-right: 0;
+	color: black;
+}
+
+.project_buttons .link-show:hover {
+	color: #348754;
+}
+
+.project_buttons .link-no-show:hover {
+	color: black;
+}
+
+.project_buttons .see-code {
+	font-size: 11px;
+	text-align: right;
+	padding: 12px;
+	padding-left: 0;
+	align-self: center;
+	color: #869d8f;
+}
+
+.project_buttons .see-code:hover {
+	color: #348754;
+}
+
+.arrow {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 5px;
+	vertical-align: top;
+	color: #348754;
+	/* position: relative;
+	top: -1px; */
+}
+/* project - two buttons styling */
+/* --- */
+
+.volunteer-info {
+	text-align: center;
+	/* border: 1px solid red; */
+	list-style-position: inside;
+}
+
+.volunteer-info h4 {
+	font-weight: 400;
+}
+
+.volunteer-info h4 a {
+	color: black;
+	text-decoration: none;
+}
+
+.volunteer-info h4 a:hover {
+	color: #348754;
+}
+
+.volunteer-info li {
+	font-weight: 300;
+	padding-top: 20px;
+}
+
+.volunteer-info li a {
+	color: black;
+	text-decoration: none;
+}
+
+.volunteer-info li a:hover {
+	color: #348754;
+}
+
+.hackathons_content {
+	text-align: center;
+	font-weight: 300;
+}
+
+.hackathons_content h4 {
+	font-weight: 400;
+}
+
+/* img styling in hackathons section */
+.hackathon-info img,
+.hackathon-project img {
+	display: block;
+	border-radius: 4px;
+}
+
+.hackathon-info .sub_content {
+	text-align: left;
+	margin: 0 auto;
+}
+/* img styling in hackathons section */
+/* --- */
+
+.small_divider {
+	width: 60vw;
+	max-width: 180px;
+	margin: 0 auto;
+	border: 0.5px solid #eaefec;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar {
+		font-size: 14px;
+		bottom: 0;
+		/* offset-x | offset-y | blur-radius | color */
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 -2px 5px rgba(0, 0, 0, 0.13);
+		padding-bottom: env(safe-area-inset-bottom);
+	}
+
+	.navbar_container a:active {
+		color: #348754;
+	}
+
+	header h1 {
+		padding-top: 25px;
+	}
+
+	header .social_media {
+		justify-content: space-between;
+	}
+
+	header .social_media a {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 13px;
+		width: 55px;
+		align-items: center;
+	}
+
+	header .social_media a span {
+		margin-left: 0px;
+		text-align: center;
+		font-size: 12px;
+	}
+
+	header .social_media a img {
+		padding: 10px;
+		padding-bottom: 0px;
+		width: 25px;
+		height: 25px;
+	}
+
+	.about_content {
+		margin-bottom: 40px;
+	}
+
+	.profile_divider {
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+
+	.section_title {
+		padding-top: 40px;
+		padding-bottom: 15px;
+	}
+
+	.project {
+		margin: 40px 28px;
+		max-width: 420px;
+	}
+
+	.projects_content {
+		margin-bottom: 40px;
+	}
+
+	.projects_container {
+		width: 100%;
+		max-width: 425px;
+		margin: 0 auto;
+	}
+
+	.project_item__details {
+		display: none;
+	}
+
+	.project_description {
+		font-size: 13px;
+		padding: 12px;
+		line-height: 1.6;
+		color: rgba(0, 0, 0, 0.65);
+		border-top: 1px solid rgb(227, 227, 227);
+	}
+
+	.volunteer-info {
+		margin-top: 20px;
+		margin-bottom: 35px;
+	}
+
+	.volunteer-info h4,
+	.volunteer-info li {
+		font-size: 15px;
+	}
+
+	.hackathons_content {
+		margin-bottom: max(250px, 50%);
+	}
+
+	.hackathons_content h4 {
+		font-size: 15px;
+	}
+
+	.hackathon-info {
+		margin-top: 20px;
+		margin-bottom: 35px;
+	}
+
+	.hackathon-info .sub_content {
+		line-height: 1.7;
+		font-size: 14px;
+		max-width: 300px;
+		padding: 10px 42px;
+	}
+
+	.picture_comment {
+		font-size: 12px;
+		margin: 10px;
+	}
+
+	.hackathon-info img,
+	.hackathon-project img {
+		display: block;
+		border-radius: 4px;
+		width: 295px;
+		height: 180px;
+		max-width: 400px;
+		max-height: 274px;
+		margin: 0 auto;
+	}
+
+	.small_divider {
+		margin-bottom: 35px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/* navbar styling */
+	.navbar {
+		font-size: 16px;
+		top: 0;
+		/* offset-x | offset-y | blur-radius | color */
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.13);
+	}
+
+	.navbar_container a:hover {
+		color: #348754;
+	}
+	/* navbar styling */
+	/* --- */
+
+	header h1 {
+		padding-top: 80px;
+	}
+
+	header .social_media {
+		justify-content: center;
+	}
+
+	header .social_media a {
+		font-size: 14px;
+		flex: 1;
+		align-items: center;
+		justify-content: space-around;
+		transition: all ease 0.3s;
+	}
+
+	header .social_media a:hover {
+		transform: scale(1.2);
+	}
+
+	.about_content {
+		margin-bottom: 60px;
+	}
+
+	.profile_divider {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.section_title {
+		padding-top: 70px;
+		padding-bottom: 30px;
+	}
+
+	.projects_content {
+		margin-bottom: 55px;
+	}
+
+	.projects_container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.project {
+		margin: 10px;
+		width: 300px;
+	}
+
+	.project_item {
+		position: relative;
+	}
+
+	.project_item__info {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background: rgba(0, 0, 0, 0);
+		transition: all ease 0.3s;
+	}
+
+	.project_item__info:hover {
+		background: rgba(0, 0, 0, 0.75);
+	}
+
+	.project_item__details {
+		color: rgb(227, 227, 227);
+		font-size: 13.7px;
+		line-height: 1.6;
+		opacity: 0;
+		position: absolute;
+		top: 1%;
+		padding: 10px 20px;
+		margin: 0 auto;
+		transition: all ease 0.5s;
+	}
+
+	.project_item__info:hover > .project_item__details {
+		opacity: 1;
+		top: 5%;
+	}
+
+	.project_description {
+		display: none;
+	}
+
+	.project_buttons .see-site {
+		font-size: 16px;
+	}
+
+	.project_buttons .see-code {
+		font-size: 12px;
+	}
+
+	.volunteer_content {
+		margin-bottom: 55px;
+	}
+
+	.volunteer-info h4,
+	.volunteer-info li {
+		font-size: 16px;
+	}
+
+	.hackathons_content {
+		margin-bottom: 230px;
+	}
+
+	.hackathons_content h4 {
+		font-size: 16px;
+	}
+
+	.hackathon-info {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	.hackathon-info .sub_content {
+		line-height: 1.8;
+		font-size: 16px;
+		max-width: 450px;
+		padding: 20px 50px;
+	}
+
+	.picture_comment {
+		font-size: 14px;
+		margin: 10px;
+	}
+
+	.hackathon-info img,
+	.hackathon-project img {
+		display: block;
+		border-radius: 4px;
+		width: 450px;
+		height: 275px;
+		margin: 0 auto;
+	}
+
+	.small_divider {
+		margin-bottom: 50px;
+	}
+}
