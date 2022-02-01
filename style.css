@@ -418,9 +418,16 @@ header .social_media a img {
 		margin-bottom: 35px;
 	}
 
-	.volunteer-info h4,
-	.volunteer-info li {
+	.volunteer-info h4 {
 		font-size: 15px;
+	}
+
+	.volunteer-info div {
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		padding-left: 52px;
+		padding-right: 52px;
 	}
 
 	.hackathons_content {
@@ -607,8 +614,12 @@ header .social_media a img {
 	}
 
 	.volunteer-info h4,
-	.volunteer-info li {
+	.volunteer-info div {
 		font-size: 16px;
+	}
+
+	.volunteer-info div {
+		font-weight: 300;
 	}
 
 	.hackathons_content {
