@@ -122,7 +122,12 @@ header .social_media a img {
 	margin-top: 20px;
 	font-size: 16px;
 	line-height: 28px;
-	list-style-position: inside;
+	/* list-style-position: outside; */
+	text-align: center;
+}
+
+.about_content .sub_content ul {
+	list-style-type: none;
 }
 /* about content styling */
 /* --- */
