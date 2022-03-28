@@ -12,19 +12,19 @@ html {
 	box-sizing: border-box;
 }
 
-body {
+/* body {
 	overflow: overlay;
 }
 
 body::-webkit-scrollbar {
-	width: 13px;
+	width: 15px;
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: #348754; /* color of the scroll thumb */
-	border-radius: 20px; /* roundness of the scroll thumb */
+	background-color: #348754;
+	border-radius: 20px;
 	border: 5px solid white;
-}
+} */
 
 /* navbar styling */
 .navbar {
