@@ -120,14 +120,43 @@ header .social_media a img {
 
 .about_content .sub_content {
 	margin-top: 20px;
-	font-size: 16px;
-	line-height: 28px;
-	/* list-style-position: outside; */
-	text-align: center;
+	list-style-position: inside;
+	width: fit-content;
+	margin: 0 auto;
 }
 
-.about_content .sub_content ul {
-	list-style-type: none;
+#li-3 a {
+	color: black;
+	text-decoration: none;
+	background: linear-gradient(120deg, #9dd7b3 0%, #9dd7b3 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 25%;
+	background-position: 0 110%;
+}
+
+#li-3 a:hover {
+	color: #348754;
+}
+
+#li-1 {
+	list-style-type: "🎓";
+}
+
+#li-2 {
+	list-style-type: "🚀";
+}
+
+#li-3 {
+	list-style-type: "🛠";
+}
+
+#li-4 {
+	list-style-type: "🧩";
+}
+
+.sub_content li::before {
+	content: " ";
+	padding-right: 3px;
 }
 /* about content styling */
 /* --- */
@@ -259,24 +288,6 @@ header .social_media a img {
 	color: #348754;
 }
 
-.volunteer-info li {
-	font-weight: 300;
-	padding-top: 20px;
-}
-
-.volunteer-info li a {
-	color: black;
-	text-decoration: none;
-	background: linear-gradient(120deg, #9dd7b3 0%, #9dd7b3 100%);
-	background-repeat: no-repeat;
-	background-size: 100% 18%;
-	background-position: 0 100%;
-}
-
-.volunteer-info li a:hover {
-	color: #348754;
-}
-
 .hackathons_content {
 	text-align: center;
 	font-weight: 300;
@@ -353,6 +364,12 @@ header .social_media a img {
 
 	.about_content {
 		margin-bottom: 40px;
+	}
+
+	.about_content .sub_content {
+		font-size: 14px;
+		line-height: 1.8rem;
+		padding-top: 1rem;
 	}
 
 	.profile_divider {
@@ -524,6 +541,12 @@ header .social_media a img {
 
 	.about_content {
 		margin-bottom: 60px;
+	}
+
+	.about_content .sub_content {
+		font-size: 16px;
+		line-height: 2.2rem;
+		padding-top: 1.6rem;
 	}
 
 	.profile_divider {
